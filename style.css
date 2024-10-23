@@ -1,0 +1,138 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    background-color: black;
+    color: #00ff00; /* Bright green hacker text */
+    font-family: "Courier New", Courier, monospace;
+    padding: 20px;
+    background-image: url('./v627-aew-19-technologybackground.jpg'); /* Add a hacker-style background image */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    padding: 20px 0;
+    text-align: center;
+    border-bottom: 2px solid #00ff00;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #00ff00;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styles */
+section {
+    margin: 40px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #00ff00;
+    display: inline-block;
+}
+
+.project {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #00ff00;
+    border-radius: 10px;
+}
+
+footer {
+    margin-top: 40px;
+    text-align: center;
+    border-top: 2px solid #00ff00;
+    padding-top: 20px;
+}
+
+/* Contact styles */
+a {
+    color: #00ff00;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#about {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0;
+    }
+
+    nav ul li a {
+        font-size: 1.5rem; /* Larger font for better readability on smaller screens */
+    }
+
+    section {
+        margin: 20px 0; /* Reduce margin for smaller screens */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Adjust heading size */
+    }
+
+    .project {
+        padding: 15px; /* Reduce padding */
+    }
+
+    footer {
+        margin-top: 20px; /* Reduce margin */
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem; /* Smaller font size */
+    }
+
+    nav ul li a {
+        font-size: 1.2rem; /* Smaller font size */
+    }
+
+    h2 {
+        font-size: 1.2rem; /* Smaller heading size */
+    }
+
+    .project {
+        padding: 10px; /* Further reduce padding */
+    }
+}
